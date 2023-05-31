@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styleadd.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <form id="laptop-form" class="form form-add-laptop">
+      <h2 class="heading-primary">
+        Add Your Preferred Laptop
+      </h2>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="brand">Brand:</label>
+
+          <select id="brand" name="brand" required>
+            <option value="">Select Brand</option>
+            <option value="ACER">Acer</option>
+            <option value="ASUS">Asus</option>
+            <option value="AVITA">AVITA</option>
+            <option value="DELL">Dell</option>
+            <option value="HP">HP</option>
+            <option value="INFINIX">Infinix</option>
+            <option value="LENOVO">Lenovo</option>
+            <option value="LG">LG</option>
+            <option value="MSI">MSI</option>
+            <option value="REALME">Realme</option>
+            <option value="SAMSUNG">Samsung</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <label for="model">Model:</label>
+          <input type="text" id="model" name="model" required />
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="cpuman">CPU Manufacturer:</label>
+
+          <div class="radio-box">
+            <div class="radio">
+              <input type="radio" id="intel" name="cpuman" value="Intel" required />
+              <label for="intel">Intel</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="amd" name="cpuman" value="AMD" required />
+              <label for="amd">AMD</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cpu-field" style="display:none;" class="input-row">
+        <div class="input-field">
+          <label for="cpu">CPU:</label>
+          <select id="cpu" name="cpu" required>
+            <option value="">Please select a CPU</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <label for="cpugen">Generation:</label>
+          <select id="cpugen" name="cpugen" required>
+            <option value="">Please select a CPU generation</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="ram">RAM:</label>
+          <select id="ram" name="ram" required>
+            <option value="">-Ram Size-</option>
+            <option value="4">4GB</option>
+            <option value="8">8GB</option>
+            <option value="16">16GB</option>
+            <option value="32">32GB</option>
+            <option value="64">64GB</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="ssd">SSD:</label>
+
+          <div class="radio-box">
+            <div class="radio">
+              <input type="radio" id="yes" name="ssd" value="Yes" required />
+              <label for="yes">Yes</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="no" name="ssd" value="No" />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="ssd-size-field" style="display:none;" class="input-field">
+          <label for="ssdsize">SSD Size:</label>
+          <select id="ssdsize" name="ssdsize">
+            <option value="">-Select Size-</option>
+            <option value="128">128 GB</option>
+            <option value="256">256 GB</option>
+            <option value="512">512 GB</option>
+            <option value="1024">1024 GB</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="gputype">GPU Type:</label>
+
+          <div class="radio-box">
+            <div class="radio">
+              <input type="radio" id="integrated" name="gputype" value="Integrated" />
+              <label for="integrated">Integrated</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="dedicated" name="gputype" value="Dedicated" />
+              <label for="dedicated">Dedicated</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="gpu-field" style="display:none;" class="input-field">
+          <label for="gpu">GPU:</label>
+          <input type="text" id="gpu" name="gpu" placeholder="Enter GPU">
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="laptopsize">Laptop Size:</label>
+
+          <div class="radio-box">
+            <div class="radio">
+              <input type="radio" id="14" name="laptopsize" value="14" required />
+              <label for="14">14</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="15.6" name="laptopsize" value="15.6" />
+              <label for="15.6">15.6</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="17" name="laptopsize" value="17" />
+              <label for="17">17</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" required />
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-field">
+          <label for="link">Link:</label>
+          <input type="text" id="link" name="link" required />
+        </div>
+      </div>
+
+      <div class="cta">
+        <button type="submit" class="btn" >Submit</button>
+
+        <a href="/" class="btn"><span>Go Back</span></a>
+      </div>
+    </form>
+  </div>
+
+  <script src="./newlaptop.js"></script>
+</body>
+
+</html>

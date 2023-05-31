@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styledb.css" />
+</head>
+<body>
+    <form id="find-laptop-form">
+        <div class="heading-part">
+          <div class="left">
+          <a href="/" class="btn-submit"><span>Go Back</span></a>
+          <a href="/add_laptop" class="btn-submit3"><span>Add Laptop</span></a>
+            
+          </div>
+
+          <div class="center">
+          <h1>- - - - Laptop Database - - - -</h1>
+          <div class="totalap" id="totalap"> </div>
+          </div>
+          <div class="checkbox-wrapper-7">
+          <h2>My Laptops</h2>
+          <input class="tgl tgl-ios" type="checkbox" id="custom" name="custom" value="true">
+          <label class="tgl-btn" for="custom"></label><br>
+          </div>
+        </div>
+        <pricelabel>
+          Max Price : <input type="number" name="price"/>
+        </pricelabel>
+        <div class="suboption">
+        
+          <div class="brand">
+            <h3>Brand</h3>
+            <div>
+              <select name="brand">
+                <option value="">-No Preference-</option>
+                <option value="ACER">Acer</option>
+                <option value="ASUS">Asus</option>
+                <option value="AVITA">AVITA</option>
+                <option value="DELL">Dell</option>
+                <option value="HP">HP</option>
+                <option value="INFINIX">Infinix</option>
+                <option value="LENOVO">Lenovo</option>
+                <option value="LG">LG</option>
+                <option value="MSI">MSI</option>
+                <option value="REALME">Realme</option>
+                <option value="SAMSUNG">Samsung</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="ram">
+            <h3>RAM</h3>
+            <div>
+              <select name="ram">
+                <option value="">-No Preference-</option>
+                <option value="4">4GB</option>
+                <option value="8">8GB</option>
+                <option value="16">16GB</option>
+                <option value="32">32GB</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="ssd">
+            <h3>Storage</h3>
+            <div>
+              <select name="ssd">
+                <option value="">-No Preference-</option>
+                <option value="0">1 TB HDD</option>
+                <option value="128">128 GB SSD</option>
+                <option value="256">256 GB SSD</option>
+                <option value="512">512 GB SSD</option>
+                <option value="1024">1024 GB SSD</option>
+              </select>
+            </div>
+          </div>
+          
+        </div>
+        <br>
+        <div class="buton">
+          <button type="submit" class="btn-submit2"><span>Find</button></span>
+        </div>
+        
+        </form>
+        <div class="contable" >
+          <table id="laptop-table" style="display: none">
+          <thead>
+            <tr>
+              <th>Laptop</th>
+              <th>CPU</th>
+              <th>RAM</th>
+              <th>Primary Storage</th>
+              <th>Screen Size</th>
+              <th>Gpu</th>
+              <th>Price</th>
+              <th>Delete  </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      
+      <script src="./laptopdb.js">findLaptops()</script>
+</body>
+</html>

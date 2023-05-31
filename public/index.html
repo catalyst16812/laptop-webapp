@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Laptop</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    
+    <form id="find-laptop-form">
+      <div class="heading-part">
+        <a href="add_laptop" class="btn-submit"><span>Add Laptop</span></a>
+        <a href="database" class="btn-submit2 "><span>Database</span></a>
+      <h1>- - - - Laptop Suggestion Tool - - - -</h1>
+      </div>
+      
+      <h2>What type of work or activities will you be doing on your laptop?</h2>
+      <div id="radios">
+        <input type="radio" name="usecase" id="school" value="school" checked />
+        <label for="school">School</label>
+        <input type="radio" name="usecase" id="work" value="work" />
+        <label for="work">Work</label>
+        <input type="radio" name="usecase" id="gaming" value="gaming" />
+        <label for="gaming">Gaming</label>
+        <input type="radio" name="usecase" id="production" value="production" />
+        <label for="production">WorkStation</label>
+      </div>
+      <br />
+      <h2>What is Your Budget?</h2>
+      <pricelabel>
+        Budget : <input type="number" name="price" required />
+      </pricelabel>
+      <br />
+      <h2>Any Custom Preference ?</h2>
+      <div class="suboption">
+        
+        <div class="brand">
+          <h3>Brand</h3>
+          <div>
+            <select name="brand">
+              <option value="">-No Preference-</option>
+              <option value="ACER">Acer</option>
+              <option value="ASUS">Asus</option>
+              <option value="AVITA">AVITA</option>
+              <option value="DELL">Dell</option>
+              <option value="HP">HP</option>
+              <option value="INFINIX">Infinix</option>
+              <option value="LENOVO">Lenovo</option>
+              <option value="LG">LG</option>
+              <option value="MSI">MSI</option>
+              <option value="REALME">Realme</option>
+              <option value="SAMSUNG">Samsung</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div class="ram">
+          <h3>RAM</h3>
+          <div>
+            <select name="ram">
+              <option value="">-No Preference-</option>
+              <option value="4">4GB</option>
+              <option value="8">8GB</option>
+              <option value="16">16GB</option>
+              <option value="32">32GB</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div class="ssd">
+          <h3>Storage</h3>
+          <div>
+            <select name="ssd">
+              <option value="">-No Preference-</option>
+              <option value="0">1 TB HDD</option>
+              <option value="128">128 GB SSD</option>
+              <option value="256">256 GB SSD</option>
+              <option value="512">512 GB SSD</option>
+              <option value="1024">1024 GB SSD</option>
+            </select>
+          </div>
+        </div>
+        <div class="checkbox-wrapper-7">
+          <h3>My Laptops</h3>
+        <input class="tgl tgl-ios" type="checkbox" id="custom" name="custom" value="true">
+        <label class="tgl-btn" for="custom"></label><br>
+      </div>
+      </div>
+
+      <br />
+      <button type="submit">Find Laptop</button>
+      *price may be subject to change
+    </form>
+    <br />
+    <div class="contable" >
+    <table id="laptop-table" style="display: none">
+      <thead>
+        <tr>
+          <th>Laptop</th>
+          <th>CPU</th>
+          <th>RAM</th>
+          <th>Primary Storage</th>
+          <th>Screen Size</th>
+          <th>Gpu</th>
+          <th>Price</th>
+          <th>Link</th>
+          <th>Send Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+<script src="./index.js"></script>
+  </body>
+</html>
