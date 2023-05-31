@@ -187,7 +187,7 @@ let transporter = nodemailer.createTransport({
   secure: true, // use SSL
   auth: {
     user: "catalyst16812@gmail.com",
-    pass: "knuyavnxspctqjij",
+    pass: "ezzqftqbjnvfxdrb",
   },
 });
 //------------------------------------
